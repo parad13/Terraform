@@ -18,5 +18,12 @@
         Version: 0.3.0
         Publisher: Mark Tucker
         VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=mark-tucker.aws-cli-configure   
-   
+4.  After setup run command **terraform init**, it'll fetch the files needed for AWS provider from terraform repository.
+5.  Run **terraform build**, it'll build the code.
+6.  Run **terraform validate** it'll validate the code.
+6.  Run **terraform plan** it'll show all the changes that will be made.
+7.  Run **terraform apply** it'll apply the changes and create an EC2 instance in your aws account.
 
+```Optional```
+- There is a command **terraform fmt** which will format your code
+- After completion of this hands on if you want you can delete the created instance using the command **terraform destroy**(this is the easy way other way is traditional one manually going to EC2 dashboard, stopping the instances and after that terminate them).
